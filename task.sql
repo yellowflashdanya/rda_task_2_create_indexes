@@ -36,12 +36,12 @@ CREATE TABLE IF NOT EXISTS OrderItems (
     PRIMARY KEY (ID)
 );
 
-CREATE INDEX Email ON Customers(Email);
+CREATE INDEX IF NOT EXISTS Email ON Customers(Email);
 
-CREATE INDEX Name ON Products(Name);
+CREATE INDEX IF NOT EXISTS Name ON Products(Name);
 
-CREATE INDEX CustomerID ON Orders(CustomerID);
+CREATE INDEX IF NOT EXISTS CustomerID ON Orders(CustomerID);
 
-CREATE INDEX Date ON Orders(Date);
+CREATE INDEX IF NOT EXISTS Date ON Orders(Date);
 
-CREATE INDEX Price ON Products(Price);
+CREATE INDEX IF NOT EXISTS Price ON Products(Price);
