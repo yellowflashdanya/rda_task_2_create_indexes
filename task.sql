@@ -44,4 +44,4 @@ CREATE INDEX CustomerID ON Orders(CustomerID);
 
 CREATE INDEX Date ON Orders(Date);
 
-CREATE INDEX Price ON Orders(Price);
+CREATE INDEX Price ON Products(Price);
