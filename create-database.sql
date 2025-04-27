@@ -35,3 +35,13 @@ CREATE TABLE OrderItems (
     FOREIGN KEY (ProductID) REFERENCES Products(ID) ON DELETE SET NULL,
     PRIMARY KEY (ID)
 );
+
+CREATE INDEX Email ON Customers(Email);
+
+CREATE INDEX Name ON Products(Name);
+
+CREATE INDEX CustomerID ON Orders(CustomerID);
+
+CREATE INDEX Date ON Orders(Date);
+
+CREATE INDEX Price ON Products(Price);
